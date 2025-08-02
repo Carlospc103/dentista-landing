@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css" rel="stylesheet"/>
     <title>Clinica Dental</title>
     <!--Tailwind css-->
@@ -28,15 +28,15 @@
     <!--Icono-->
     <link rel="icon" href="./assets/img/logo.webp" type="image/png">
 </head>
-<body class="bg-[#f0f2f5] relative">
+<body class="bg-blancoBody relative overflow-x-hidden">
 
-    <header class="w-full bg-white shadow-md fixed top-0 right-0 left-0 z-50 px-4 py-3 flex flex-col xl:flex-row xl:justify-center xl:items-center xl:gap-6 font-sans">
+    <header class="w-screen bg-white shadow-md fixed top-0 right-0 left-0 z-50 px-4 py-3 flex flex-col xl:flex-row xl:justify-center xl:items-center xl:gap-6 font-sans">
   <!-- Logo y menú hamburguesa -->
         <div class="w-full flex justify-between items-center sm:h-28">
             <img src="./assets/icons/BORCELLE.webp" alt="Logo de la clínica" class="w-36 rounded-full sm:w-24" />
 
             <button id="menu-toggle" class="xl:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 text-[#008ddf] sm:h-10 sm:w-10" fill="none" viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 text-azul sm:h-10 sm:w-10" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M4 8l16 0" />
@@ -56,7 +56,7 @@
       <li><a href="#razones-para-elegirnos">¿Por qué elegirnos?</a></li>
       <li>
         <a href="#agendar-cita"
-          class="bg-[#0071b2] text-white font-bold py-3 px-6 rounded-xl block w-full xl:w-auto">
+          class="bg-azul text-white font-bold py-3 px-6 rounded-xl block w-full xl:w-auto">
           Agendar Cita
         </a>
       </li>
@@ -68,8 +68,8 @@
 
     <div class="h-44 sm:h-28"></div>
 
-    <section id="inicio" class="bg-hero-dentista bg-cover bg-center bg-no-repeat min-h-[70vh] max-h-screen relative flex flex-col justify-center gap-5 xl:h-[90%] w-full scroll-mt-32 font-sans">  
-        <div class="absolute inset-0 bg-gradient-to-r from-[#0071b2]/70 to-transparent"></div>
+    <section id="inicio" class="bg-hero-dentista bg-cover bg-center bg-no-repeat min-h-[70vh] max-h-screen relative flex flex-col justify-center gap-5 lg:h-[90%] w-full scroll-mt-32 font-sans">  
+        <div class="absolute inset-0 bg-gradient-to-r from-azul/70 to-transparent"></div>
 
         <div  class="xl:px-32 px-10">
             <article data-aos="fade-right" data-aos-duration="2000"  class="min-w-80 w-10/12 max-w-xs relative z-10">
@@ -97,7 +97,7 @@
     <div class="max-w-6xl mx-auto px-6 font-sans">
 
        <section id="servicios" class="flex flex-col items-center sm:block scroll-mt-40">
-            <h2 data-aos="fade-down" data-aos-duration="800" class="font-bold text-[#0071b2] text-5xl my-6 text-center">
+            <h2 data-aos="fade-down" data-aos-duration="800" class="font-bold text-azul text-5xl my-6 text-center">
                 Especialidades
             </h2>
 
@@ -113,62 +113,62 @@
                 <article data-aos="fade-up" data-aos-duration="800"  class="mx-auto my-6">
                     <img class="rounded-xl w-64 h-44 object-cover transition-transform duration-300 hover:scale-105"
                         src="./assets/img/servicios-img/endodoncia.webp" alt="Imagen de la endodoncia">
-                    <p class="text-xl text-center font-semibold text-[#64748b]">Endodoncia</p>
+                    <p class="text-xl text-center font-semibold text-gris">Endodoncia</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800"  class="mx-auto my-6">
                     <img class="rounded-xl w-64 h-44 object-cover transition-transform duration-300 hover:scale-105"
                         src="./assets/img/servicios-img/rehabilitacion-oral.webp" alt="Imagen de la rehabilitación oral">
-                    <p class="text-xl text-center font-semibold text-[#64748b]">Rehabilitación Oral</p>
+                    <p class="text-xl text-center font-semibold text-gris">Rehabilitación Oral</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800"  class="mx-auto my-6">
                     <img class="rounded-xl w-64 h-44 object-cover transition-transform duration-300 hover:scale-105"
                         src="./assets/img/servicios-img/pediatria.webp" alt="Imagen de Odontopediatría">
-                    <p class="text-xl text-center font-semibold text-[#64748b]">Odontopediatría</p>
+                    <p class="text-xl text-center font-semibold text-gris">Odontopediatría</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800"  class="mx-auto my-6">
                     <img class="rounded-xl w-64 h-44 object-cover transition-transform duration-300 hover:scale-105"
                         src="./assets/img/servicios-img/implantes-carralero (1).webp" alt="Imagen de una implantologia">
-                    <p class="text-xl text-center font-semibold text-[#64748b]">Implantologia</p>
+                    <p class="text-xl text-center font-semibold text-gris">Implantologia</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800"  class="mx-auto my-6">
                     <img class="rounded-xl w-64 h-44 object-cover transition-transform duration-300 hover:scale-105"
                         src="./assets/img/servicios-img/cirugia-bucal.webp" alt="Imagen de una cirugía bucal">
-                    <p class="text-xl text-center font-semibold text-[#64748b]">Cirugía Bucal</p>
+                    <p class="text-xl text-center font-semibold text-gris">Cirugía Bucal</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800"  class="mx-auto my-6">
                     <img class="rounded-xl w-64 h-44 object-cover transition-transform duration-300 hover:scale-105"
                         src="./assets/img/servicios-img/estetica-dental.webp" alt="Imagen de estética dental">
-                    <p class="text-xl text-center font-semibold text-[#64748b]">Estética Dental</p>
+                    <p class="text-xl text-center font-semibold text-gris">Estética Dental</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800" class="mx-auto my-6 xl:col-start-1 xl:col-end-2">
                     <img class="rounded-xl w-64 h-44 object-cover transition-transform duration-300 hover:scale-105"
                         src="./assets/img/servicios-img/ortodoncia.webp" alt="Imagen de la ortodoncia oral">
-                    <p class="text-xl text-center font-semibold text-[#64748b]">Ortodoncia Oral</p>
+                    <p class="text-xl text-center font-semibold text-gris">Ortodoncia Oral</p>
                 </article>
 
                 <article data-aos="fade-up" data-aos-duration="800"  class="mx-auto my-6 xl:col-start-3 xl:col-end-4">
                     <img class="rounded-xl w-64 h-44 object-cover transition-transform duration-300 hover:scale-105"
                         src="./assets/img/servicios-img/periodoncia.webp" alt="Imagen de la periodoncia">
-                    <p class="text-xl text-center font-semibold text-[#64748b]">Periodoncia</p>
+                    <p class="text-xl text-center font-semibold text-gris">Periodoncia</p>
                 </article>
             </div>
         </section>
 
 
         <section id="testimonios" class="mx-auto my-20 xl:scroll-mt-40 scroll-mt-48">
-            <h2 class="font-bold text-[#0071b2] text-5xl my-6 text-center">Testimonios</h2>
+            <h2 class="font-bold text-azul text-5xl my-6 text-center">Testimonios</h2>
 
             <p class="text-lg font-normal leading-6 text-center my-6">La confianza de nuestros pacientes es nuestro mayor logro. Cada testimonio refleja el compromiso, la atención y la calidad que brindamos día a día.</p>
 
             <h3  class="text-4xl font-semibold text-center text-gray-400 ">Lo que dicen nuestros clientes</h3>
 
-            <article data-aos="fade-left" data-aos-duration="1000" class="border-[#b3d3e6] border-solid border-3 px-10 py-5 rounded-xl bg-[#C0DAE5] my-6">
+            <article data-aos="fade-left" data-aos-duration="1000" class="border-azulBorder border-solid border-3 px-10 py-5 rounded-xl bg-azulfondo my-6">
                 <img class="w-20 h-15" src="./assets/icons/stars.png" alt="Reseña de 5 estrellas">
                 <p class="text-xl leading-5 my-3">"Tenía mucho miedo de ir al dentista, pero el Dr. Ramírez fue súper amable y me explicó todo con paciencia. El consultorio es limpio y moderno, y me sentí muy cómoda desde el primer momento. ¡Volveré sin duda!"</p>
                 <div class="flex gap-2 items-center">
@@ -177,7 +177,7 @@
                 </div>
             </article>
 
-            <article data-aos="fade-right" data-aos-duration="1000"  class="border-[#b3d3e6] border-solid border-3 px-10 py-5 rounded-xl bg-[#C0DAE5] my-6">
+            <article data-aos="fade-right" data-aos-duration="1000"  class="border-azulBorder border-solid border-3 px-10 py-5 rounded-xl bg-azulfondo my-6">
                 <img class="w-20 h-15" src="./assets/icons/stars.png" alt="Reseña de 5 estrellas">
                 <p class="text-xl leading-5 my-3">"Me hice una limpieza dental y todo fue rápido, sin dolor y muy profesional. Además, me dieron recomendaciones útiles para mantener mis dientes sanos. ¡100% recomendado!"</p>
                 <div class="flex gap-2 items-center">
@@ -186,7 +186,7 @@
                 </div>
             </article>
 
-            <article data-aos="fade-left" data-aos-duration="1000" class="border-[#b3d3e6] border-solid border-3 px-10 py-5 rounded-xl bg-[#C0DAE5] my-6">
+            <article data-aos="fade-left" data-aos-duration="1000" class="border-azulBorder border-solid border-3 px-10 py-5 rounded-xl bg-azulfondo my-6">
                 <img class="w-20 h-15" src="./assets/icons/stars.png" alt="Reseña de 5 estrellas">
                 <p class="text-xl leading-5 my-3">"Llevé a mi hija de 7 años y la atención fue excelente. El doctor fue muy paciente y supo cómo hacerla sentir tranquila. Se fue feliz y ya no le tiene miedo al dentista."</p>
                 <div class="flex items-center gap-2">
@@ -198,7 +198,7 @@
 
         <section  id="sobre-nosotros" class="my-20 xl:flex xl:justify-center xl:items-center xl:gap-6 xl:scroll-mt-40 scroll-mt-48">
             <article data-aos="fade-right" data-aos-duration="2000" class="mb-5">
-                <h2 class="text-5xl font-bold text-[#0071b2]">Dr. Luis Ramírez Salazar</h2>
+                <h2 class="text-5xl font-bold text-azul">Dr. Luis Ramírez Salazar</h2>
                 <h3 class="text-3xl font-bold text-gray-400 my-4">Cirujano Dentista</h3>
                 <p class="text-xl font-semibold">COP 26542 | Especialista en Rehabilitación Oral e Implantología</p>
 
@@ -228,7 +228,7 @@
 
         <section id="razones-para-elegirnos" class="my-20 xl:flex xl:justify-center xl:items-center xl:gap-6 xl:scroll-mt-40 scroll-mt-48">
             <article data-aos="fade-right" data-aos-duration="2000">
-                <h2 class="text-5xl font-bold text-[#0071b2]">Razones para elegirnos</h2>
+                <h2 class="text-5xl font-bold text-azul">Razones para elegirnos</h2>
 
                 <p class="text-lg font-normal my-4">Más de 9 años atendiendo a pacientes con responsabilidad y vocación.</p>
 
@@ -274,7 +274,7 @@
         <section id="agendar-cita" class="my-20 flex flex-col items-center xl:flex-row-reverse xl:gap-6 xl:h-screen xl:scroll-mt-40 scroll-mt-48">
             <article data-aos="fade-left" data-aos-duration="2000" class="flex items-center justify-center flex-col py-8 bg-white rounded-3xl shadow-md xl:w-1/2">
                 <div class="px-5">
-                    <h2 class="text-5xl font-bold text-center text-[#0071b2]">Agenda tu cita</h2>
+                    <h2 class="text-5xl font-bold text-center text-azul">Agenda tu cita</h2>
                     <p class="text-lg font-normal my-4 text-justify [hyphens:auto]">Somos una clínica odontológica con más de 9 años de experiencia en el rubro dental, caracterizándonos por nuestro profesionalismo y experiencia.</p>
                 </div>
 
@@ -290,7 +290,7 @@
                             id="name"
                             name="name"
                             placeholder="Nombres"
-                            class="w-full rounded-full border border-[#e0e0e0] bg-white py-2 px-5 text-base text-[#6B7280] outline-none focus:border-[#0071b2] focus:shadow-md"
+                            class="w-full rounded-full border border-blancoInput bg-white py-2 px-5 text-base text-grisInput outline-none focus:border-azul focus:shadow-md"
                         />
                     </div>
 
@@ -304,7 +304,7 @@
                             id="last_name"
                             name="last_name"
                             placeholder="Apellidos"
-                            class="w-full rounded-full border border-[#e0e0e0] bg-white py-2 px-5 text-base text-[#6B7280] outline-none focus:border-[#0071b2] focus:shadow-md"
+                            class="w-full rounded-full border border-blancoInput bg-white py-2 px-5 text-base text-grisInput outline-none focus:border-azul focus:shadow-md"
                         />
                     </div>
 
@@ -318,7 +318,7 @@
                             id="email"
                             name="email"
                             placeholder="Correo electrónico"
-                            class="w-full rounded-full border border-[#e0e0e0] bg-white py-2 px-5 text-base text-[#6B7280] outline-none focus:border-[#0071b2] focus:shadow-md"
+                            class="w-full rounded-full border border-blancoInput bg-white py-2 px-5 text-base text-grisInput outline-none focus:border-azul focus:shadow-md"
                         />
                     </div>
 
@@ -332,7 +332,7 @@
                             id="tel"
                             name="tel"
                             placeholder="Teléfono"
-                            class="w-full rounded-full border border-[#e0e0e0] bg-white py-2 px-5 text-base text-[#6B7280] outline-none focus:border-[#0071b2] focus:shadow-md"
+                            class="w-full rounded-full border border-blancoInput bg-white py-2 px-5 text-base text-grisInput outline-none focus:border-azul focus:shadow-md"
                         />
                     </div>
 
@@ -348,7 +348,7 @@
                             name="message"
                             rows="4"
                             placeholder="Escribe aquí"
-                            class="w-full rounded-3xl border border-[#e0e0e0] bg-white py-3 px-5 text-base text-[#6B7280] outline-none focus:border-[#0071b2] focus:shadow-md resize-none"
+                            class="w-full rounded-3xl border border-blancoInput bg-white py-3 px-5 text-base text-grisInput outline-none focus:border-azul focus:shadow-md resize-none"
                         ></textarea>
                     </div>
 
@@ -356,7 +356,7 @@
                     <div>
                         <button
                             type="submit"
-                            class="w-2/4 rounded-full bg-[#0071b2] py-3 text-base font-semibold text-white hover:bg-[#005f93] transition-colors"
+                            class="w-2/4 rounded-full bg-azul py-3 text-base font-semibold text-white hover:bg-azulHover transition-colors"
                         >
                             Enviar
                         </button>
